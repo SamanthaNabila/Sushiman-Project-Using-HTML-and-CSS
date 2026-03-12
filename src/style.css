@@ -169,6 +169,7 @@ a {
 @media screen and (max-width: 900px) {
   .header__nav {
     background: var(--primary-color);
+    
   }
 
   .header__menu {
@@ -204,7 +205,7 @@ a {
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
-    padding-top: 76px;
+    
   }
 
   .hero-image img {
