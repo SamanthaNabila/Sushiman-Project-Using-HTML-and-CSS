@@ -204,6 +204,7 @@ a {
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
+    padding-top: 76px;
   }
 
   .hero-image img {

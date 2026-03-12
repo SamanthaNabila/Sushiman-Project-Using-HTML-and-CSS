@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-      <nav class="header__nav">
-        <div class="header__logo">
+      <nav class="header__nav ">
+          <div class="header__logo">
           <h4 data-aos="fade-down">Sushiman</h4>
           <div class="header__logo-overlay"></div>
         </div>
@@ -43,13 +43,15 @@
                     type="button"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#off-canvas-navbar"
+                    data-bs-scroll="true"
+                    data-bs-backdrop="true"
                     aria-controls="off-canvas-navbar">
                     <span class="navbar-toggler-icon " style="filter:invert(100%) brightness(600%);" ></span>
 
               </button>
               <div 
-                 class="offcanvas offcanvas-end"
-                 id="off-canvas-navbar">
+                 class="offcanvas offcanvas-end navbar-nav-scroll"
+                 id="off-canvas-navbar" style="--bs-scroll-height:20rem">
                  <div class="offcanvas-header">
                   <button 
                     type="button"
@@ -61,9 +63,9 @@
 
                  </div>
                  <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                      <li>
-            <a href="#menu">Menu</a>
+            <a href="#menu" class="nav-link active ">Menu</a>
           </li>
           <li>
             <a href="#food">Food</a>
@@ -87,6 +89,9 @@
 
           
         </ul>
+          
+        </div>
+        
       </nav>
     </header>
 
