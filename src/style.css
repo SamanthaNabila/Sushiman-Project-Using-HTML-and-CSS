@@ -109,6 +109,12 @@ a {
  @media screen and (max-width: 1024px) {
   .header__nav {
     background: var(--primary-color);
+    
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  .header__logo-overlay {
     width: 100%;
     
   }
@@ -128,7 +134,8 @@ a {
   .offcanvas-body li {
     font-size: 24px;
     font-weight: 400;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color:black;
     border-bottom: 1px solid rgb(219, 216, 216);
    
@@ -153,6 +160,7 @@ a {
     display: none;
   }
 }
+
 
 @media screen and (max-width: 750px) {
   .about-us__image {
@@ -265,12 +273,11 @@ a {
 @media screen and (max-width: 1060px) {
   .hero {
     flex-direction: column;
-    
+    padding-top: 76.8px;   
   }
 
   .hero-image img {
     width: 100%;
-
     transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
   }
 }
@@ -320,6 +327,25 @@ a {
   .popular-foods__card.active-card {
     min-width: 100%;
   }
+  .popular-foods__filters {
+
+  }
+  .popular-foods__filter-btn.active {
+  background: #fff;
+  color: var(--primary-color)
+}
+  .popular-foods__filter-btn:hover {
+  background: #fff;
+  color: var(--primary-color)
+}
+.popular-foods__filters {
+  margin-top: 48px;
+  max-width: 100%;
+  justify-content: center;
+  gap: 24px;
+}
+
+
 }
 /* END: popular media queries */
 
@@ -365,7 +391,7 @@ a {
     flex-direction: column;
   }
 
-  .trending-drink {
+  .trending-drinks {
     flex-direction: column-reverse;
   }
 
@@ -392,4 +418,5 @@ a {
   .trending__content {
     padding: 32px;
   }
-}  
+} 
+
