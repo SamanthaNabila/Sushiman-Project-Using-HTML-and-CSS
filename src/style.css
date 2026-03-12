@@ -177,7 +177,20 @@ a {
 
   .header__menu-mobile {
     display: flex;
+    
   }
+  .offcanvas {
+    background: var(--primary-color);
+  }
+  .offcanvas-body li {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    color: white;
+   
+  }
+  
 }
 
 @media screen and (max-width: 550px) {
