@@ -107,6 +107,35 @@ a {
 
 /* START: about us media queries */
  @media screen and (max-width: 1024px) {
+  .header__nav {
+    background: var(--primary-color);
+    width: 100%;
+    
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+    
+  }
+  .offcanvas {
+    background: rgb(241, 241, 231);
+    width: 100%;
+  }
+  .offcanvas-body li {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    color:black;
+    border-bottom: 1px solid rgb(219, 216, 216);
+   
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
   .about-us {
     flex-direction: column;
   }
@@ -142,6 +171,34 @@ a {
 }
 
 @media screen and (max-width: 550px) {
+  .header__nav {
+    background: var(--primary-color);
+    
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+    
+  }
+  .offcanvas {
+    background: rgb(241, 241, 231);
+    width: 100%;
+  }
+  .offcanvas-body li {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    color:black;
+    border-bottom: 1px solid rgb(219, 216, 216);
+   
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
   .about-us__image-sushi2 img,
   .about-us__image-sushi3 img {
     width: 50%;
@@ -181,15 +238,18 @@ a {
     
   }
   .offcanvas {
-    background: var(--primary-color);
+    background: rgb(241, 241, 231);
   }
   .offcanvas-body li {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     padding-bottom: 2rem;
-    margin: 0 auto;
-    color: white;
+    color:black;
+    border-bottom: 1px solid rgb(219, 216, 216);
    
+  }
+  li:last-child {
+    border-bottom: 0;
   }
   
 }
